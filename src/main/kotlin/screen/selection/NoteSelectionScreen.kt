@@ -6,8 +6,8 @@ import model.Note
 import screen.creation.CreateNoteScreen
 
 class NoteSelectionScreen(private var archive: Archive) : BaseSelectionScreen<Note>(
-    archive.noteslist,
-    "заметку",
+    elms = archive.noteslist,
+    objType = "заметку",
     onCreate = {
         val createNoteScreen = CreateNoteScreen()
         createNoteScreen.create()

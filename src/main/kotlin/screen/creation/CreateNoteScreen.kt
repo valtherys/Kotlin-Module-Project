@@ -3,7 +3,7 @@ package screen.creation
 import model.Note
 import util.InputHelper
 
-class CreateNoteScreen : BaseCreateScreen<Note>() {
+class CreateNoteScreen : BaseCreateScreen<Note> {
     override fun create(): Note {
         println("Введите название заметки:")
         val name = InputHelper.readNotEmptyLine()
